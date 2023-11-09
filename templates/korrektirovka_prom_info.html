@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Результаты корректировки</title>
+</head>
+<body>
+	<p>{{mess}}<p>
+	{% if mess == "Корректировка произведена успешно" %}
+				<p>{{nom_kol}}: произведена корректировка количества топлива {{vid_top}}<p>
+				<p>Новое значение: {{kol_top}}<p>
+	{% endif %}
+
+<p><a href="korrektirovka.html">Вернуться к корректировке</a></p>
+<p><a href="index.html">Вернуться на главную страницу</a></p>
+
+</body>
+</html>

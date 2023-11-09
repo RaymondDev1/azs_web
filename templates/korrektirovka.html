@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Корректировка</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<body>
+<p align="center"><b><font size="12" color="Teal" face="Garamond">Корректировка</font>
+</b></p>
+
+<form method="post" action="korrektirovka_info.html">
+	{% csrf_token %}
+
+	<p>Выберите действие</p>
+	<p><select name="vid_deistvia">
+		<option>Очистить выручку</option>
+		<option>Очистить резервуары</option>
+		<option>Скорректировать резервуары</option>
+	</select>
+	</p>
+
+	<p><input type="submit" value="Ввести"></p>
+</form>
+
+<p><a href="index.html">Вернуться на главную страницу</a></p>
+
+</body>
+</html>

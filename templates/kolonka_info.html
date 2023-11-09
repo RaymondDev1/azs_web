@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<p align="center"><b><font size="12" color="Teal" face="Garamond">Информация о колонке № {{kl}}</font>
+</b></p>
+
+<p> <font face="Garamond"/font> Количество топлива вида 92: {{kt.0}}</p>
+<p>Количество топлива вида 95: {{kt.1}}</p>
+<p>Количество топлива вида 100: {{kt.2}}</p>
+<p>Выбрана {{nk}}</p>
+<p>{% if nk == "Колонка 1" %}
+				Доступно топливо: 92, 95
+				{% endif %}
+			</p>
+
+<p>{% if nk == "Колонка 2" %}
+				Доступно топливо: 95, 100
+				{% endif %}
+			</p>
+
+<p>{% if nk == "Колонка 3" %}
+				Доступно топливо: 100
+				{% endif %}
+			</p>
+
+<p>{% if nk == "Колонка 4" %}
+				Доступно топливо: 95
+				{% endif %}
+			</p>
+
+
+<p><a href="index.html">Вернуться на главную страницу</a></p>
+
+
+</body>
+</html>

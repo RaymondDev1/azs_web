@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Заправка</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	
+	<p>{{mess}}<p>
+	{% if mess == "Заправка произведена успешна" %}
+				<p>{{nom_kol}}: произошла заправка топливом {{vid_top}} в количестве {{kol_top}} литров</p>
+				{% endif %}
+
+<p><a href="zapravka.html">Вернуться к заправке</a></p>
+<p><a href="index.html">Вернуться на главную страницу</a></p>
+
+</body>
+</html>

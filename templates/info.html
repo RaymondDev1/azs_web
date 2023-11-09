@@ -1,0 +1,153 @@
+<html>
+<head>
+	<title>Информация о АЗС</title>
+</head>
+
+<body>
+
+<p align="center"><b><font size="12" color="Teal" face="Garamond">Информация об АЗС</font>
+</b></p>
+<p> <font face="Garamond"/font> Количество колонок = {{a}}</p>
+
+<p align="center"><table border="5" cellpadding="10" cellspacing="15" width="90%">
+	<tr>
+		<td colspan="4">Остаток топлива в колонке №1: </td>
+		<td colspan="4">Остаток топлива в колонке №2: </td>
+	</tr>
+
+	<tr>
+		<td><p>92</p>
+			<p>{% if c.0 < 200 %}
+				<font color="red" face="Garamond">{{c.0}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{c.0}}</font>
+				{% endif %}
+			</p></td>
+
+		<td><p>95</p>
+			<p>{% if c.1 < 200 %}
+				<font color="red" face="Garamond">{{c.1}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{c.1}}</font>
+				{% endif %}
+			</p>
+			</td>
+		
+		<td><p>100</p>
+			<p>{% if c.2 < 200 %}
+				<font color="red" face="Garamond">{{c.2}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{c.2}}</font>
+				{% endif %}
+			</p></td>
+		<td><p>ДТ</p>
+			<p>{% if c.3 < 200 %}
+				<font color="red" face="Garamond">{{c.3}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{c.3}}</font>
+				{% endif %}
+			</p></td>
+		<td><p>92</p>
+			<p><p>{% if d.0 < 200 %}
+				<font color="red" face="Garamond">{{d.0}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{d.0}}</font>
+				{% endif %}
+			</p></td>
+		<td><p>95</p>
+			<p>{% if d.1 < 200 %}
+				<font color="red" face="Garamond">{{d.1}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{d.1}}</font>
+				{% endif %}
+			</p></td>
+		<td><p>100</p>
+			<p>{% if d.2 < 200 %}
+				<font color="red" face="Garamond">{{d.2}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{d.2}}</font>
+				{% endif %}
+			</p></td>
+		<td><p>ДТ</p>
+			<p>{% if d.3 < 200 %}
+				<font color="red" face="Garamond">{{d.3}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{d.3}}</font>
+				{% endif %}
+			</p></td>	
+	</tr>
+
+	<tr>
+		<td colspan="4">Остаток топлива в колонке №3: </td>
+		<td colspan="4">Остаток топлива в колонке №4: </td>
+	</tr>
+
+	<tr>
+		<td><p>92</p>
+			<p>{% if e.0 < 200 %}
+				<font color="red" face="Garamond">{{e.0}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{e.0}}</font>
+				{% endif %}
+			</p></td>
+		<td><p>95</p>
+			<p>{% if e.1 < 200 %}
+				<font color="red" face="Garamond">{{e.1}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{e.1}}</font>
+				{% endif %}
+			</p></td>
+		<td><p>100</p>
+			<p>{% if e.2 < 200 %}
+				<font color="red" face="Garamond">{{e.2}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{e.2}}</font>
+				{% endif %}
+			</p></td>
+		<td><p>ДТ</p>
+			<p>{% if e.3 < 200 %}
+				<font color="red" face="Garamond">{{e.3}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{e.3}}</font>
+				{% endif %}
+			</p></td>
+		<td><p>92</p>
+			<p>{% if f.0 < 200 %}
+				<font color="red" face="Garamond">{{f.0}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{f.0}}</font>
+				{% endif %}
+			</p></td>
+		<td><p>95</p>
+			<p>{% if f.1 < 200 %}
+				<font color="red" face="Garamond">{{f.1}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{f.1}}</font>
+				{% endif %}
+			</p></td>
+		<td><p>100</p>
+			<p>{% if f.2 < 200 %}
+				<font color="red" face="Garamond">{{f.2}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{f.2}}</font>
+				{% endif %}
+			</p></td>
+		<td><p>ДТ</p>
+			<p>{% if f.3 < 200 %}
+				<font color="red" face="Garamond">{{f.3}}</font>
+				{% else  %}
+				<font color="black" face="Garamond">{{f.3}}</font>
+				{% endif %}
+			</p></td>
+	</tr>
+
+</table></p>
+
+<p> <font face="Garamond"/font> Выручка = {{b}} <font face="Garamond"/font> </p>
+
+<p><a href="index.html">Вернуться на главную страницу</a></p>
+
+
+</body>
+
+</html>
